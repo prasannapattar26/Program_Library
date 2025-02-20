@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+num_list = list()<br>
+n1 = input("Enter a number :")<br>
+n2 = input("Enter a number :")<br>
+n3 = input("Enter a number :")<br>
+n4 = input("Enter a number :")<br>
+n5 = input("Enter a number :")<br>
+for i in [n1, n2, n3, n4, n5]:<br>
+    num_list.append(int(i))<br>
+
+sum = 0<br>
+for n in num_list:<br>
+    if not int(n)%2 == 0:<br>
+        sum = sum+int(n)<br>
+    else :<br>
+        continue<br>
+
+print("Sum of Odd values is :",sum)<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testn6">
+        Enter an integer :<input type="number" name="scr1"><br><br>
+        Enter an integer :<input type="number" name="scr2"><br><br>
+        Enter an integer :<input type="number" name="scr3"><br><br>
+        Enter an integer :<input type="number" name="scr4"><br><br>
+        Enter an integer :<input type="number" name="scr5"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+
+    </form>
+
+
+Result = {{result}}<br><br>
+
+</div>
+
+
+
+
+
+
+{% endblock %}

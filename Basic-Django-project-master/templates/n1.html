@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+        n = input("Enter the number of days: ")<br>
+
+d = int(n)<br>
+if d%365 == 0:<br>
+    years = int(d/365)<br>
+    days = 0<br>
+else :<br>
+    years = int(d/365)<br>
+    days = d%365<br>
+if days%30 == 0:<br>
+    months = days/30<br>
+    days1 = 0<br>
+else :<br>
+    months = int(days/30)<br>
+    days1 = days%30<br>
+print("The value converted to {:} years , {:} months , {:} days".format(years,months,days1))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testn1">
+        Enter number of days :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+    Result = {{result}}<br><br>
+
+</div>
+
+{% endblock %}

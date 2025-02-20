@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+n1 = int(input("Enter the starting point of the range : "))<br>
+n2 = int(input("Enter the ending point of the range : "))<br>
+for n in range(n1,n2+1):<br>
+    sum = 0<br>
+
+    for i in range(1,n):<br>
+        if n%i == 0:<br>
+            sum = sum+i<br>
+    if sum == n:<br>
+        print(" {:} is a perfect number.".format(sum))<br>
+    else:<br>
+        print(" {:} is not a perfect number.".format(n))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl5">
+        Enter a number :<input type="number" name="scr1"><br><br>
+        Enter a number :<input type="number" name="scr2"><br><br>
+
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+</div>
+
+
+
+{% endblock %}

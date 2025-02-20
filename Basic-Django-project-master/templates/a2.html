@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+        num_list = []<br>
+for i in range(10):<br>
+    num_list.append(input("Feed a number to the list : "))<br>
+
+for n in num_list :<br>
+    counter = 0<br>
+    n = int(n)<br>
+    for i in range(1,n+1):<br>
+        if n%i == 0:<br>
+            counter += 1<br>
+    if counter == 2:<br>
+        print("The number : {:} in the list is prime.".format(n))<br>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <br><br>
+    <form action="testa2">
+        Enter a number : <input type="number" name="scr1"><br><br>
+        Enter a number : <input type="number" name="scr2"><br><br>
+        Enter a number : <input type="number" name="scr3"><br><br>
+        Enter a number : <input type="number" name="scr4"><br><br>
+        Enter a number : <input type="number" name="scr5"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+</div>
+
+
+{% endblock %}

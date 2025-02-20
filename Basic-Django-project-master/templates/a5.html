@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+        num_list = []<br>
+for i in range(6):<br>
+    num_list.append(input("Enter a number : "))<br>
+
+small_num = None<br>
+small_pos = None<br>
+i = 1<br>
+for n in num_list:<br>
+    n = int(n)<br>
+    if small_num is None :<br>
+        small_num = n<br>
+        small_pos = i<br>
+    elif n<small_num:<br>
+        small_num = n<br>
+        small_pos = i<br>
+    i += 1<br>
+
+print("The smallest number is {:} at the position : {:}.".format(small_num,small_pos))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <br><br>
+    <form action="testa5">
+        <br><br>
+        Enter a number :<input type="number" name="scr1"><br><br>
+        Enter a number :<input type="number" name="scr2"><br><br>
+        Enter a number :<input type="number" name="scr3"><br><br>
+        Enter a number :<input type="number" name="scr4"><br><br>
+        Enter a number :<input type="number" name="scr5"><br><br>
+        Enter a number :<input type="number" name="scr6"><br><br>
+
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+
+    </form>
+
+
+
+
+Result = {{result}}<br><br>
+
+</div>
+
+
+
+{% endblock %}

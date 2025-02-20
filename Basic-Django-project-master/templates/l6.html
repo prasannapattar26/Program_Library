@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+n1 = int(input("Enter the starting point of the range : "))<br>
+n2 = int(input("Enter the ending point of the range : "))<br>
+sum = 0<br>
+for n in range(n1,n2+1):<br>
+    if not n%17 == 0:<br>
+        sum += n<br>
+
+print("The sum of numbers in the range not divisible by 17 is {:} .".format(sum))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl6">
+        Enter a number :<input type="number" name="scr1"><br><br>
+        Enter a number :<input type="number" name="scr2"><br><br>
+
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+
+</div>
+
+
+{% endblock %}

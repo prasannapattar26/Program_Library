@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+        sentence = input("Enter a string : ")<br>
+ls = sentence.split()<br>
+sen_new = ""<br>
+ls1 = ls[::-1]<br>
+for word in ls1 :<br>
+    sen_new = sen_new + " " + word<br>
+
+print("The reversed sentence is : "+sen_new.strip())<br>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <form action="tests1">
+        <br><br>
+        Enter a string :<input type="text" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+    Result = {{result}}<br><br>
+
+</div>
+{% endblock %}
+
+

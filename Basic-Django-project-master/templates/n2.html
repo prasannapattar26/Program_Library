@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+ID = input("Enter the ID of the employee :")<br>
+hrs = input("Enter the number of hours worked :")<br>
+amt = input("Enter the hourly wage :")<br>
+
+salary = int(hrs)*int(amt)<br>
+print("Salary of Employee with id {:} is Rs{:}".format(ID,salary))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testn2">
+        Enter a Employee ID :<input type="number" name="scr1"><br><br>
+        Enter number of hours worked :<input type="number" name="scr2"><br><br>
+        Enter Hourly wage :<input type="number" name="scr3"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+    Result = {{result}}<br><br>
+
+</div>
+
+{% endblock %}

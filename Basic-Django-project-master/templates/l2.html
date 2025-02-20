@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+n = int(input("Enter a number :"))<br>
+product = 1<br>
+for i in range(3):<br>
+    product = product * n<br>
+print("The product is : "+str(product))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl2">
+        Enter a number :<input type="number" name="scr1"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+</div>
+
+
+
+{% endblock %}

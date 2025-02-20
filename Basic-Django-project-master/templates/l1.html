@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+num = []<br>
+for i in range(10) :<br>
+    num.append(input("Enter a number :"))<br>
+sum = 0<br>
+for n in num :<br>
+    sum += int(n)<br>
+avg = sum/10<br>
+print("Sum : {:} & Average : {:.1f}".format(sum,avg))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl1">
+        Enter a number :<input type="number" name="scr1"><br><br>
+        Enter a number :<input type="number" name="scr2"><br><br>
+        Enter a number :<input type="number" name="scr3"><br><br>
+        Enter a number :<input type="number" name="scr4"><br><br>
+        Enter a number :<input type="number" name="scr5"><br><br>
+        Enter a number :<input type="number" name="scr6"><br><br>
+        Enter a number :<input type="number" name="scr7"><br><br>
+        Enter a number :<input type="number" name="scr8"><br><br>
+        Enter a number :<input type="number" name="scr9"><br><br>
+        Enter a number :<input type="number" name="scr10"><br><br>
+
+
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+
+</div>
+
+
+{% endblock %}

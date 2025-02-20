@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+n = int(input("Eneter a number : "))<br>
+for i in range(1,n+1):<br>
+    if n%i == 0:<br>
+        print("{:} is a divisor for the entered number.".format(i))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl13">
+        Enter a number :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+</div>
+
+
+
+{% endblock %}

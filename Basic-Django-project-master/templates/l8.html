@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+num = int(input("Enter a number : "))<br>
+product = 1<br>
+for i in range(1,num+1):<br>
+    product *= i<br>
+
+print("The factorial of the entered number is : "+str(product))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl8">
+        Enter a number :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+</div>
+
+
+
+{% endblock %}

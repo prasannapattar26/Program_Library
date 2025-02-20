@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+for n in range(1,1001):<br>
+    sum = 0<br>
+    m = n<br>
+    while m>0:<br>
+        a = m%10<br>
+        sum += a**3<br>
+        m = m//10<br>
+    if sum == n :<br>
+        print("The number {:} is armstrong.".format(n))<br>
+    else :<br>
+        print("The number {:} is not armstrong.".format(n))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl11">
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+</div>
+
+
+
+{% endblock %}

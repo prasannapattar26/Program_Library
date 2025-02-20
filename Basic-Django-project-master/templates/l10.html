@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+num = int(input("Enter a number : "))<br>
+num1 = num<br>
+sum = 0<br>
+while num1 > 0:<br>
+    m = num1 % 10<br>
+    sum = sum + m**3<br>
+    num1 = num1//10<br>
+
+if sum == num :<br>
+    print("The enetered number is armstrong.")<br>
+else :<br>
+    print("The entered number is not armstrong.")<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testl10">
+        Enter a number :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+
+
+
+    Result = {{result}}<br><br>
+
+
+</div>
+
+
+
+{% endblock %}

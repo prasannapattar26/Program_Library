@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+        sen = input("Enter a sentence : ")<br>
+counter = 0<br>
+for i in sen:<br>
+    counter += 1<br>
+
+print("Total chars. : "+str(counter))<br>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <br><br>
+<form action="tests2">
+    Enter a string :<input type="text" name="scr"><br><br>
+    <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+</form>
+
+Result = {{result}}<br><br>
+</div>
+{% endblock %}

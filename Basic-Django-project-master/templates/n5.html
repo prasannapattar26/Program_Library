@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+sec1 = input("Enter the time in seconds :")<br>
+
+sec = int(sec1)<br>
+if sec%3600 == 0:<br>
+    hours = int(sec/3600)<br>
+    sec = 0<br>
+else :<br>
+    hours = int(sec/3600)<br>
+    sec = sec%3600<br>
+if sec%60 == 0:<br>
+    minutes = sec/60<br>
+    sec = 0<br>
+else :<br>
+    minutes = int(sec/60)<br>
+    sec = sec%60<br>
+print("The value converted to {:} hours , {:} minutes , {:} seconds".format(hours,minutes,sec))<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testn5">
+        Enter time in seconds :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+    Result = {{result}}<br><br>
+
+</div>
+{% endblock %}

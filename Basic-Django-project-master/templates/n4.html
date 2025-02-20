@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class="container b">
+  <h2>Code</h2>
+  <div class="card">
+    <div class="card-body">
+#Taking 2000,500,100,20,10 Notes<br>
+
+amt1 = input("Enter the amount :")<br>
+
+
+amt = int(amt1)<br>
+if amt%2000 == 0:<br>
+    two1000 = int(amt/2000)<br>
+    print("Rs 2000 notes :",two1000)<br>
+
+else :<br>
+    two1000 = int(amt/2000)<br>
+    amt = amt%2000<br>
+    print("Rs 2000 notes :",two1000)<br>
+
+    if amt%500 == 0:<br>
+        five100 = int(amt/500)<br>
+        print("Rs 500 notes :",five100)<br>
+
+    else :<br>
+        five100 = int(amt/500)<br>
+        amt = amt%500<br>
+        print("Rs 500 notes :",five100)<br>
+        if amt%100 == 0:<br>
+            one100 = int(amt/100)<br>
+            print("Rs 100 notes :",one100)<br>
+        else :<br>
+            one100 = int(amt/100)<br>
+            amt = amt%100<br>
+            print("Rs 100 notes :",one100)<br>
+            if amt%20 == 0:<br>
+                two10 = int(amt/20)<br>
+                print("Rs 20 notes :",two10)<br>
+            else :<br>
+                two10 = int(amt/20)<br>
+                amt = amt%20<br>
+                print("Rs 20 notes :",two10)<br>
+                if amt%10 == 0:<br>
+                    one10 = int(amt/10)<br>
+                    print("Rs 10 notes :",one10)<br>
+                else :<br>
+                    one10 = int(amt/10)<br>
+                    amt = amt%10<br>
+                    print("Rs 10 notes :",one10)<br>
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid"><br><br>
+    <form action="testn4">
+        Enter an amount :<input type="number" name="scr"><br><br>
+        <input class="btn btn-primary btn-block btn-lg" type="submit"><br><br>
+    </form>
+
+    Result = {{result2000}}<br><br>
+    {{result500}}<br><br>
+    {{result100}}<br><br>
+    {{result20}}<br><br>
+    {{result10}}<br><br>
+
+</div>
+
+{% endblock %}
